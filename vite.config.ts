@@ -14,7 +14,12 @@ export default defineConfig(({ command }) => ({
 
   base: command === "serve"
     ? "/"
-    : "/muskaanvrati/",
+    : "/muskaanPortfolio",
+
+  build: {
+    outDir: path.resolve(import.meta.dirname, "dist"),
+    emptyOutDir: true,
+  },
 
   resolve: {
     alias: {

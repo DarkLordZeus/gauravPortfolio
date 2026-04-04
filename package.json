@@ -2,7 +2,7 @@
   "name": "muskaan-portfolio",
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://muskaanvr.github.io/muskaanvrati/",
+  "homepage": "https://muskaanvr.github.io/muskaanPortfolio/",
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
@@ -11,8 +11,8 @@
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/public"
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
