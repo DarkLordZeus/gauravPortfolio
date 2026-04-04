@@ -6,7 +6,6 @@ import {
   Github,
   ExternalLink,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { useState } from "react";
 import {
