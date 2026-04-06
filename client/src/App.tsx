@@ -7,12 +7,13 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 
+const BASE = import.meta.env.PROD ? "/gauravPortfolio" : "";
+
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path={`${BASE}/`} component={Home} />
+      <Route path={`${BASE}/404`} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );

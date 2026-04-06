@@ -1,8 +1,8 @@
 {
-  "name": "muskaan-portfolio",
+  "name": "gaurav-portfolio",
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://muskaanvr.github.io/muskaanPortfolio/",
+  "homepage": "https://gauravsinghraikwal.github.io/gauravPortfolio/",
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",

@@ -12,7 +12,9 @@ export default defineConfig(({ command }) => ({
     tailwindcss(),
   ],
 
-  base: "/muskaanPortfolio/",
+  base: command === "serve"
+    ? "/"
+    : "/gauravPortfolio/",
 
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
